@@ -45,7 +45,7 @@ class MainController extends Controller
             Mail::send(['emails.contact-email', 'emails.contact-email-text'],
                 ["data" => $request->all()], function ($message) {
                 $message->from('contact@site-ecommerce.fr');
-                $message->to('julien.boyer@3wa.fr');
+                $message->to('maltay.pro@gmail.com');
                 $message->subject("Formulaire de contact");
             });
 
